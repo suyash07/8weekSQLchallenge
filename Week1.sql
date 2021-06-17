@@ -15,7 +15,7 @@ GO
 
 SELECT 
 		customer_id, 
-		COUNT(order_date) AS [Number of Days Visited]
+		COUNT(DISTINCT order_date) AS [Number of Days Visited]
 	FROM
 		sales
 	GROUP BY 
